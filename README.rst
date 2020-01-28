@@ -1,2 +1,2 @@
 JAPI is jira API
-Linux CLI which help work with jira server
+Linux python package for getting info from task on jira server

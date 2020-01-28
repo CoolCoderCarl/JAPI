@@ -10,16 +10,17 @@ def createSettingsFile():
 username=admin
 password=admin
 [server]
-server=https://jira.com''')
+server=https://jira.com
+[task]
+num=JIRA-1234''')
         file.close()
 
-# get settings from file
-
+# Get settings from file
 conf = configparser.ConfigParser()
 conf.read('settings.ini')
 
-username = conf['auth']['username']
-password = conf['auth']['password']
-
-servername = conf['server']['server']
+username = conf['auth']['username'] # USERNAME of jira user
+password = conf['auth']['password'] # PASSWORD
+servername = conf['server']['server'] # JIRA SERVER
+tasknum = conf['task']['num'] # TASK NUMBER
 
