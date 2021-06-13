@@ -1,10 +1,10 @@
 import jiracall
-from setuptools import setup
+import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name='jiracall',
     version=jiracall.__version__,
     packages=['jiracall'],
