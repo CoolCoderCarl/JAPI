@@ -1,11 +1,11 @@
 from jira import JIRA
 from jiracall import settingsJ
 
-# Jira authentication to SERVER by USERNAME and PASSWORD
+### Jira authentication to Server by Username and Password
 options = {"server": settingsJ.servername}
 jira = JIRA(options, basic_auth=(settingsJ.username, settingsJ.password))
 
-# An ISSUE specify in the settings.ini
+### An Issue specify in the settings.ini
 issue = jira.issue(settingsJ.tasknum)
 
 def getInfo(issue):
@@ -34,4 +34,4 @@ def getWorklogs(issue):
 
     workSum = ( author, cmmnt, cretd, strtd, tmSpnt )
 
-    print(workSum) # index out of range for some tasks
+    print(workSum) # Index out of range for some tasks
