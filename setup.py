@@ -1,7 +1,7 @@
 import jiracall
 from setuptools import setup
 
-with open("README.rst", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
@@ -9,7 +9,7 @@ setup(
     version=jiracall.__version__,
     packages=['jiracall'],
     url='https://github.com/CoolCoderCarl/JAPI',
-    license='MIT Licensse',
+    license='GNU General Public License v3.0',
     author='Kir',
     author_email='123qwekir2wl@gmail.com',
     description=long_description,
