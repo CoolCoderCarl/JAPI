@@ -2,4 +2,7 @@
 Linux python package for getting info from task on jira server
 
 ## How to start 
-Before you start you need `settings.ini`, it can be generated via **settingsJ.py** method
+Before you start you need `settings.ini`, it can be generated via **settingsJ.py** method  
+
+## Packages  
+https://pypi.org/manage/project/jiracall/releases/  
